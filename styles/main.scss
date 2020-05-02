@@ -1,3 +1,43 @@
+:root {
+    --color-green: #06c167;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background: black;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: calc(100% - 120px);
+    margin: auto;
+}
+
+header {
+    .logo {
+        h1 {
+            font-weight: 300;
+            span {
+                font-weight: 600;
+                color: var(--color-green);
+            }
+        }
+    }
+    .container {
+    display: flex;
+    align-items: center;
+    }
+    .searchBar {
+        margin-left: auto;
+    }
+    .header-option {
+        padding-left: 5rem;
+    }
+    .currentDetails, .searchBar {
+        display: flex;
+        
+    }
 }
