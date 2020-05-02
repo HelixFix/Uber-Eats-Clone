@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/HelixFix/Uber-Eats-Clone/issues"
   },
-  "homepage": "https://github.com/HelixFix/Uber-Eats-Clone#readme"
+  "homepage": "https://github.com/HelixFix/Uber-Eats-Clone#readme",
+  "devDependencies": {
+    "sass": "^1.26.5"
+  }
 }
