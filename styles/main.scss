@@ -1,5 +1,7 @@
 :root {
+    font-size: 16px;
     --color-green: #06c167;
+    --color-grey: rgb(238, 238, 238);
 }
 
 * {
@@ -35,9 +37,27 @@ header {
     }
     .header-option {
         padding-left: 5rem;
+        letter-spacing: 0.6px;
     }
-    .currentDetails, .searchBar {
+    .currentDetails, 
+    .searchBar {
         display: flex;
         
+    }
+}
+
+.options {
+    padding: 1.2rem 0;
+    .options-btn {
+        background: var(--color-grey);
+        padding: 0.8rem 1.2rem;
+        border-radius: 30px;
+        border: 0;
+        font-size: 1rem;
+        letter-spacing: 0.6px;
+        &.selected {
+            background: black;
+            color: white;
+        }
     }
 }
