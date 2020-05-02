@@ -1,0 +1,20 @@
+{
+  "name": "Uber-Eats-Clone",
+  "version": "1.0.0",
+  "description": "Uber Eats listing page using HTML and CSS (SASS)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelixFix/Uber-Eats-Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HelixFix/Uber-Eats-Clone/issues"
+  },
+  "homepage": "https://github.com/HelixFix/Uber-Eats-Clone#readme"
+}
