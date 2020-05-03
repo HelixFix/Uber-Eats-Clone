@@ -2,6 +2,7 @@
     font-size: 16px;
     --color-green: #06c167;
     --color-grey: rgb(238, 238, 238);
+    --color-greyDarker: rgb(84, 84, 84);
 }
 
 * {
@@ -58,6 +59,53 @@ header {
         &.selected {
             background: black;
             color: white;
+        }
+    }
+}
+
+.listings {
+    padding: 2rem 0;
+    .header {
+        display: flex;
+        align-items: center;
+        .header-title {
+            h2 {
+                font-weight: 400;
+                font-size: 1.7rem;
+                margin-bottom: 0.5rem;
+                margin-top: 0;
+            }
+            span {
+                color: var(--color-greyDarker);
+            }
+        }
+        .header-viewOptions {
+            display: flex;
+            align-items: center;
+            margin: auto 0 auto auto;
+            .viewAll {
+                color: var(--color-green);
+                padding-right: 2rem;
+            }
+            .viewMore {
+                .arrow {
+                    width: 40px;
+                    height: 40px;
+                    background: red;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background: var(--color-grey);
+                    opacity: 0.3;
+                    transition: all 0.2s ease-in-out;
+                    cursor: pointer;
+                    &.darker,
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 }
