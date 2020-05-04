@@ -24,33 +24,7 @@ body {
     margin: auto;
 }
 
-header {
-    .logo {
-        h1 {
-            font-weight: 300;
-            span {
-                font-weight: 600;
-                color: var(--color-green);
-            }
-        }
-    }
-    .container {
-    display: flex;
-    align-items: center;
-    }
-    .searchBar {
-        margin-left: auto;
-    }
-    .header-option {
-        padding-left: 5rem;
-        letter-spacing: 0.6px;
-    }
-    .currentDetails, 
-    .searchBar {
-        display: flex;
-        
-    }
-}
+@import 'include/header';
 
 .options {
     padding: 1.2rem 0;
