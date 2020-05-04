@@ -18,6 +18,12 @@ header {
     .header-option {
         padding-left: 5rem;
         letter-spacing: 0.6px;
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 1rem;
+            display: inline-flex;
+        }
     }
     .currentDetails, 
     .searchBar {
