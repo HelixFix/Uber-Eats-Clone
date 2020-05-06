@@ -9,6 +9,9 @@
     box-sizing: border-box;
 }
 
+@import 'breakpoints.scss';
+@import 'media.scss';
+
 .smallText {
     font-size: 0.7rem;
     font-weight: 300;
@@ -22,6 +25,23 @@ body {
 .container {
     width: calc(100% - 120px);
     margin: auto;
+
+    padding: 0 15px;
+    // Window width >= 576px
+        @include sm {
+            padding: 0 20px;
+        }
+    // Window width >= 992px
+        @include lg {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1100px;
+        }
+    // Window width >= 1400px
+        @include rwd(1400) {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
 }
 
 @import 'include/header';
