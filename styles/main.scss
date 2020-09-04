@@ -124,6 +124,16 @@ body {
         overflow: hidden;
         overflow-x: scroll;
         scroll-snap-type: x mandatory; // points d'accroche en cas de défilement
+        scroll-behavior: smooth;
+
+        // Hide scrollbar
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+        
+        &::-webkit-scrollbar { //Chrome
+            display: none;
+            
+        }
 
         .listings-col {
             display: flex;
