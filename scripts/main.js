@@ -30,6 +30,9 @@ const handleSlider = listing => {
 
     arrowRight.addEventListener('click', e => {
         e.preventDefault()
+
+        handleClassChange('right')
+
         listingGrid.scrollTo({
             left: listingGrid.offsetWidth,
             behaviour: 'smooth'
@@ -38,9 +41,27 @@ const handleSlider = listing => {
     
     arrowLeft.addEventListener('click', e => {
         e.preventDefault()
+
+        handleClassChange('left')
+
         listingGrid.scrollTo({
             left: 0, // Retour point d'origine
             behaviour: 'smooth'
         })
     })
+
+    // Class change
+
+    const handleClassChange = direction => {
+
+        if (direction == 'right') {
+            arrowRight.classList.remove('darker')
+            arrowLeft.classList.add('darker')
+        } else if (direction == 'left') {
+            arrowLeft.classList.remove('darker')
+            arrowRight.classList.add('darker')
+        }
+
+    }
+
 }
