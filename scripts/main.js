@@ -65,3 +65,13 @@ const handleSlider = listing => {
     }
 
 }
+
+document.onkeypress = function (e) {
+    e = e || window.event;
+
+    // 13 correspondant à la touche Entrer
+    if(e.keyCode === 13) {
+        document.documentElement.classList.toggle('dark-mode');
+    }
+}
+

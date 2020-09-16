@@ -3,6 +3,7 @@
     --color-green: #06c167;
     --color-grey: rgb(238, 238, 238);
     --color-greyDarker: rgb(84, 84, 84);
+    background-color : white
 }
 
 * {
@@ -196,4 +197,10 @@ body {
 
         }
     }
+
+
+}
+
+.dark-mode {
+    filter: invert(100%)
 }
